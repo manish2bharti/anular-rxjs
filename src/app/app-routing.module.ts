@@ -13,6 +13,7 @@ import { PluckComponent } from "./observable/pluck/pluck.component";
 import { FilterComponent } from "./observable/filter/filter.component";
 import { SubjectComponent } from "./observable/subject/subject.component";
 import { ReplySubjectComponent } from "./observable/reply-subject/reply-subject.component";
+import { AsyncSubjectComponent } from "./observable/async-subject/async-subject.component";
 
 const routes: Routes = [
   { path: 'promise', component: PromiseComponent },
@@ -27,7 +28,8 @@ const routes: Routes = [
     {path: 'pluck', component: PluckComponent},
     {path: 'filter', component: FilterComponent},
     {path: 'subject', component: SubjectComponent},
-    {path: 'reply-subject', component: ReplySubjectComponent},
+    {path: 'replay-subject', component: ReplySubjectComponent},
+    {path: 'async-subject', component: AsyncSubjectComponent},
   ]},
   { path: '**', redirectTo: 'promise'}
 ];
