@@ -12,6 +12,7 @@ import { MapComponent } from "./observable/map/map.component";
 import { PluckComponent } from "./observable/pluck/pluck.component";
 import { FilterComponent } from "./observable/filter/filter.component";
 import { SubjectComponent } from "./observable/subject/subject.component";
+import { ReplySubjectComponent } from "./observable/reply-subject/reply-subject.component";
 
 const routes: Routes = [
   { path: 'promise', component: PromiseComponent },
@@ -26,6 +27,7 @@ const routes: Routes = [
     {path: 'pluck', component: PluckComponent},
     {path: 'filter', component: FilterComponent},
     {path: 'subject', component: SubjectComponent},
+    {path: 'reply-subject', component: ReplySubjectComponent},
   ]},
   { path: '**', redirectTo: 'promise'}
 ];
