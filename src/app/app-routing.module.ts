@@ -16,6 +16,8 @@ import { ReplySubjectComponent } from "./observable/reply-subject/reply-subject.
 import { AsyncSubjectComponent } from "./observable/async-subject/async-subject.component";
 import { MergeComponent } from "./observable/merge/merge.component";
 import { ConcatComponent } from "./observable/concat/concat.component";
+import { MergeMapComponent } from "./observable/merge-map/merge-map.component";
+
 
 const routes: Routes = [
   { path: 'promise', component: PromiseComponent },
@@ -34,6 +36,7 @@ const routes: Routes = [
     {path: 'async-subject', component: AsyncSubjectComponent},
     {path: 'merge', component: MergeComponent},
     {path: 'concat', component: ConcatComponent},
+    {path: 'merge-map', component: MergeMapComponent},
   ]},
   { path: '**', redirectTo: 'promise'}
 ];
