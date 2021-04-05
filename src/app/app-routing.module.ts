@@ -14,6 +14,8 @@ import { FilterComponent } from "./observable/filter/filter.component";
 import { SubjectComponent } from "./observable/subject/subject.component";
 import { ReplySubjectComponent } from "./observable/reply-subject/reply-subject.component";
 import { AsyncSubjectComponent } from "./observable/async-subject/async-subject.component";
+import { MergeComponent } from "./observable/merge/merge.component";
+import { ConcatComponent } from "./observable/concat/concat.component";
 
 const routes: Routes = [
   { path: 'promise', component: PromiseComponent },
@@ -30,6 +32,8 @@ const routes: Routes = [
     {path: 'subject', component: SubjectComponent},
     {path: 'replay-subject', component: ReplySubjectComponent},
     {path: 'async-subject', component: AsyncSubjectComponent},
+    {path: 'merge', component: MergeComponent},
+    {path: 'concat', component: ConcatComponent},
   ]},
   { path: '**', redirectTo: 'promise'}
 ];
