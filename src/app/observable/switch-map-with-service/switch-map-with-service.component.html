@@ -1,0 +1,40 @@
+<div class="col-md-12">
+  <h2>Switch Map with Service</h2>
+  <hr>
+
+  <h5>Search Post Videos</h5>
+  <form #searchForm="ngForm">
+    <div class="mt3">
+      <input type="text" class="form-control form-control-lg"
+        ngModel
+        placeholder="Search by userId 1,2,3..."
+       required name="searchTerm" autocomplete="off">
+    </div>
+  </form>
+  <hr>
+
+  <div class="result" *ngIf="searchResults">
+    <div class="d-flex">
+      <h5>Search Result</h5>
+      <span class="ml-auto text-muted">{{searchResultsCount}} Results found...</span>
+    </div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">User Id</th>
+          <th scope="col">Title</th>
+          <th scope="col">Body</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of searchResults">
+          <th scope="row">{{item.id}}</th>
+          <td>{{item.userId}}</td>
+          <td>{{item.title}}</td>
+          <td>{{item.body}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

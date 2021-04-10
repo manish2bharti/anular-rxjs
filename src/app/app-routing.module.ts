@@ -19,6 +19,7 @@ import { ConcatComponent } from "./observable/concat/concat.component";
 import { MergeMapComponent } from "./observable/merge-map/merge-map.component";
 import { ConcatMapComponent } from "./observable/concat-map/concat-map.component";
 import { SwitchMapComponent } from "./observable/switch-map/switch-map.component";
+import { SwitchMapWithServiceComponent } from "./observable/switch-map-with-service/switch-map-with-service.component";
 
 const routes: Routes = [
   { path: 'promise', component: PromiseComponent },
@@ -40,6 +41,7 @@ const routes: Routes = [
     {path: 'merge-map', component: MergeMapComponent},
     {path: 'concat-map', component: ConcatMapComponent},
     {path: 'switch-map', component: SwitchMapComponent},
+    {path: 'switch-map-with-service', component: SwitchMapWithServiceComponent},
   ]},
   { path: '**', redirectTo: 'promise'}
 ];

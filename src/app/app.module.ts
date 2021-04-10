@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { HttpClientModule } from "@angular/common/http";
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { PromiseComponent } from './promise/promise.component';
@@ -27,6 +27,7 @@ import { MergeMapComponent } from './observable/merge-map/merge-map.component';
 import { ConcatMapComponent } from './observable/concat-map/concat-map.component';
 import { SwitchMapComponent } from './observable/switch-map/switch-map.component';
 import { SwitchMapWithServiceComponent } from './observable/switch-map-with-service/switch-map-with-service.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -58,7 +59,9 @@ import { SwitchMapWithServiceComponent } from './observable/switch-map-with-serv
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
